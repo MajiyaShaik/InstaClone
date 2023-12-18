@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Montserrat:wght@500&family=Poppins:wght@300;400;500;600&family=Roboto:wght@400;500;700&family=Stick+No+Bills:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem;
+}
+.left{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+    align-items: center;
+    gap: 1.2rem;
+}
+.left h4{
+    font-size: 1.2rem;
+}
+.right{
+    display: flex;
+    gap: 1.8rem;
+}
+.profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 0.8rem;
+    
+}
+.profile1{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;    
+}
+.posts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.posts h5{
+    font-size: 1rem;
+}
+.profile img{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+}
+.bio{
+    margin: 1rem;
+    width: 100%;
+}
+.bio h4{
+    margin-bottom:  0.1rem;
+    font-size: 1rem;
+}
+.bio span{
+    font-size: 0.9rem;
+}
+.bio p{
+    margin-top: 0.1rem;
+    line-height: 1rem;
+    font-size: 0.9rem;
+}
+.stories{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.stories .story{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.stories img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+.stories h4{
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+}  
+.pics{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 1rem;
+}
+.pics img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+@media screen and (min-width: 700px){
+    .header{
+        height: 10vh;
+    }
+
+    .left{
+        gap: 20rem;
+    }
+    .left h4{
+        font-size: 2rem;
+    }
+    .right{
+        gap: 3rem;
+    }
+    .pics{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 1rem;
+        object-fit: cover;
+        grid-gap: 0rem;
+    }
+    .pics img{
+        height: 18rem;
+        width: 18rem;
+    }
+}             
